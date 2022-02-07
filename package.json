@@ -6,8 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./",
-    "build": "tsc -p ."
+    "build": "tsc -p .",
+    "dev":"ts-node-dev --respawn --transpile-only --ignore-watch node_module --no-notify src/index.ts"
   },
   "author": "JovasDevs",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.1.8"
+  }
 }

@@ -8,7 +8,7 @@
 
     "strict": true,                                      
     "skipLibCheck": true,
-    "modeuleResolution": "node",
+    "moduleResolution": "node",
     "rootDir": "src",
     "typeRoots": [
       "./src/@types", 
