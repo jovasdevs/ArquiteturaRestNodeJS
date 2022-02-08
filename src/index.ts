@@ -1,4 +1,5 @@
 import express from "express";
+import errorHandler from "./middlewares/error-handler.middleware";
 import statusRoute from "./routes/status.route";
 import usersRoute from './routes/users.route';
 
@@ -12,6 +13,10 @@ app.use(express.urlencoded({extended: true}));
 app.use(usersRoute);
 
 app.use(statusRoute);
+
+//Config dos Handlers de Error
+
+app.use(errorHandler);
 
 // Inicialização do servidor
 app.listen(3000, () => {
